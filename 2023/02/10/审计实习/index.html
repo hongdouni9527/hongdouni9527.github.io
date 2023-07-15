@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang='zh-CN'>
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="generator" content="Hexo 6.1.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
 
-<link rel="stylesheet" href="/css/main.css">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
 
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>审计实习阶段性总结 - “哲里“</title>
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="人生阶段：人生初次实习，步入社会的第一步​	成年后的首次实习，也是第一次独立地步入社会，感受着社会上的气息，体会着社会的鞭笞。第一次实习，也是身为男子汉必要的成长。从离不开家的孩童，到独自上学时的少年，再到背井离乡求学的青年，我的人生循序渐进着。恰如有句话说得好：“机会只留给那些有准备的人”。第一次独立地实习——这正是一次改变命运的机会，一个恰好被有胆量有能力独自生活的青年抓住的机会。这个机会也将">
+  
+    <meta name="description" content="人生阶段：人生初次实习，步入社会的第一步​	成年后的首次实习，也是第一次独立地步入社会，感受着社会上的气息，体会着社会的鞭笞。第一次实习，也是身为男子汉必要的成长。从离不开家的孩童，到独自上学时的少年，再到背井离乡求学的青年，我的人生循序渐进着。恰如有句话说得好：“机会只留给那些有准备的人”。第一次独立地实习——这正是一次改变命运的机会，一个恰好被有胆量有能力独自生活的青年抓住的机会。这个机会也将">
 <meta property="og:type" content="article">
 <meta property="og:title" content="审计实习阶段性总结">
 <meta property="og:url" content="http://example.com/2023/02/10/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E4%B9%A0/index.html">
@@ -32,356 +35,271 @@
 <meta property="article:author" content="shizhe_yuan">
 <meta property="article:tag" content="实习">
 <meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="实习">
 
-<link rel="canonical" href="http://example.com/2023/02/10/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E4%B9%A0/">
+  <!-- feed -->
+  
 
+  
+    
+<link rel="stylesheet" href="/css/main.css">
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
+  
 
-  <title>审计实习阶段性总结 | “哲里“</title>
+  
+
+  
+
   
 
 
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+  
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">“哲里“</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
+<body>
+  
 
 
 
 
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+  
 
-  </li>
-        <li class="menu-item menu-item-archives">
+<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">“哲里“</div></a></div>
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+<nav class="menu dis-select"></nav>
+</header>
 
-  </li>
-  </ul>
-</nav>
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">审计实习阶段性总结</span></div><div class="widget-body fs14"><div class="doc-tree active"></div></div></widget>
 
 
 
 
 </div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/10/%E5%AE%A1%E8%AE%A1%E5%AE%9E%E4%B9%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="shizhe_yuan">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="“哲里“">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          审计实习阶段性总结
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-02-10 20:03:13 / 修改时间：20:46:35" itemprop="dateCreated datePublished" datetime="2023-02-10T20:03:13+08:00">2023-02-10</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+    </aside>
+    <div class='l_main'>
+      
 
       
-        <h6 id="人生阶段：人生初次实习，步入社会的第一步"><a href="#人生阶段：人生初次实习，步入社会的第一步" class="headerlink" title="人生阶段：人生初次实习，步入社会的第一步"></a>人生阶段：人生初次实习，步入社会的第一步</h6><p>​	成年后的首次实习，也是第一次独立地步入社会，感受着社会上的气息，体会着社会的鞭笞。第一次实习，也是身为男子汉必要的成长。从离不开家的孩童，到独自上学时的少年，再到背井离乡求学的青年，我的人生循序渐进着。恰如有句话说得好：“机会只留给那些有准备的人”。第一次独立地实习——这正是一次改变命运的机会，一个恰好被有胆量有能力独自生活的青年抓住的机会。这个机会也将成为我人生道路中的下一个更大机会的准备，为我的前途铺下坚实的基础。</p>
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-02-10T12:03:13.000Z">2023-02-10</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>审计实习阶段性总结</span></h1>
+<h6 id="人生阶段：人生初次实习，步入社会的第一步"><a href="#人生阶段：人生初次实习，步入社会的第一步" class="headerlink" title="人生阶段：人生初次实习，步入社会的第一步"></a>人生阶段：人生初次实习，步入社会的第一步</h6><p>​	成年后的首次实习，也是第一次独立地步入社会，感受着社会上的气息，体会着社会的鞭笞。第一次实习，也是身为男子汉必要的成长。从离不开家的孩童，到独自上学时的少年，再到背井离乡求学的青年，我的人生循序渐进着。恰如有句话说得好：“机会只留给那些有准备的人”。第一次独立地实习——这正是一次改变命运的机会，一个恰好被有胆量有能力独自生活的青年抓住的机会。这个机会也将成为我人生道路中的下一个更大机会的准备，为我的前途铺下坚实的基础。</p>
 <h6 id="审计实习：一个电子搬砖工的自述"><a href="#审计实习：一个电子搬砖工的自述" class="headerlink" title="审计实习：一个电子搬砖工的自述"></a>审计实习：一个电子搬砖工的自述</h6><p>​	何为审计，简单来说，就是对企业出具的汇总报告进行审查，并且在审查无误后，形成指导性意见反馈给企业，同时让公众明白该企业的报告无误。审计要做到这一点，就需要各种工具，就目前而言，主流的审计形式还是通过Excel，编制相关底稿，利用工具判断各财务数据间的关系是否正确。曾有传言，说人力审计很快就会被审计软件所替代，我也曾担忧一时。但是审计实习过后，心中便有了底气——如此复杂多变的审计环境，要想通过软件来实现真正的审计自动化，以目前的技术和形势，怕是要付出人工万倍的成本才有可能，没有一家事务所会如此慷慨担当开拓的勇者。</p>
 <p>​	那么，为什么说审计实习是电子搬砖呢？理由很简单，大部分的时间，你都在给底稿填数据、找数据、改数据，这与搬砖无异。因此，现在已经出现了不少审计工具，帮助审计员们快速填入数据，完成所有底稿仅需简简单单的三步——“打开软件，导入数据，导出底稿”。但是，往往工具的出现会使人懒惰，审计工具的出现，会极快地腐化人心，让人懒惰，从而不愿意去检查那些光速完成的底稿，从而导致审计的效力大大减弱（倘若被审单位依据审计工具的特性制作假账，那么便可瞒天过海）。因此，目前此次审计实习，依旧采用纯手工的方式进行审计工作。</p>
 <p>​	也许，审计实习中百分之九十的时间都在无意义机械化的“搬砖”。但是，往往有那么百分之一的时间，你能学到待在学校，待在企业里一年也学不到的东西。在这短短的时间里，你会经历如下过程：发现问题——分析问题——检查愚蠢错误——思考解决方法——询问领导——与企业人员沟通——获得新数据——重新思考解决方法——解决问题。在这过程中，你既巩固了自己的工作过程，同时了解了领导的处理方式，客户交流，解决问题的方法等一系列在潜移默化中强化你个人能力的力量。因此，这是审计锻炼人的地方之一。它让你时时刻刻保持着学习的心态，不断逼迫你跳出舒适圈，Push你掌握新知识。</p>
 <h6 id="阶段性总结：良好的开端，未来充满机遇与挑战"><a href="#阶段性总结：良好的开端，未来充满机遇与挑战" class="headerlink" title="阶段性总结：良好的开端，未来充满机遇与挑战"></a>阶段性总结：良好的开端，未来充满机遇与挑战</h6><p>​	总结来说，作为人生初次正式实习，在20岁的年纪，开始踏上属于自己的事业之路，这很有意义，同时这个起点还不赖。但是，要想仅仅依靠这一次实习就成就将来美好的人生是不切实际的。未来，有了此次实习的铺垫，我需要爬得更高，学习更多，去迎接更大的欲望。就像审计这个行业一样，不断地学习，不停地进化，“打不倒我的将使我更强大”，层层跃进，勇攀高峰。（PS.攀比是可怕的，有时候会使人丧失心智，偏离本心。因此，目视自我，以自我为基准，不断满足自我逐步膨胀的欲望，才是较正确的方式。（PPS.有时候欲望很恐怖，但是欲望也是最强大的动力，故此处使用“欲望”来强化））</p>
 
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023/02/15/%E5%AE%A1%E8%AE%A1%E5%BA%95%E7%A8%BF1/">审计底稿心得——应付职工薪酬</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/01/29/target1/">target1</a></div></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
     </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
 
-    
-    
-    
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E5%AE%9E%E4%B9%A0/" rel="tag"># 实习</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2023/01/29/target1/" rel="prev" title="target1">
-      <i class="fa fa-chevron-left"></i> target1
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/02/15/%E5%AE%A1%E8%AE%A1%E5%BA%95%E7%A8%BF1/" rel="next" title="审计底稿心得——应付职工薪酬">
-      审计底稿心得——应付职工薪酬 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
       }
     }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
   }
 </script>
 
-        </div>
-          
+<!-- required -->
+
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
   </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BA%BA%E7%94%9F%E9%98%B6%E6%AE%B5%EF%BC%9A%E4%BA%BA%E7%94%9F%E5%88%9D%E6%AC%A1%E5%AE%9E%E4%B9%A0%EF%BC%8C%E6%AD%A5%E5%85%A5%E7%A4%BE%E4%BC%9A%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="nav-number">1.</span> <span class="nav-text">人生阶段：人生初次实习，步入社会的第一步</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%A1%E8%AE%A1%E5%AE%9E%E4%B9%A0%EF%BC%9A%E4%B8%80%E4%B8%AA%E7%94%B5%E5%AD%90%E6%90%AC%E7%A0%96%E5%B7%A5%E7%9A%84%E8%87%AA%E8%BF%B0"><span class="nav-number">2.</span> <span class="nav-text">审计实习：一个电子搬砖工的自述</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E9%98%B6%E6%AE%B5%E6%80%A7%E6%80%BB%E7%BB%93%EF%BC%9A%E8%89%AF%E5%A5%BD%E7%9A%84%E5%BC%80%E7%AB%AF%EF%BC%8C%E6%9C%AA%E6%9D%A5%E5%85%85%E6%BB%A1%E6%9C%BA%E9%81%87%E4%B8%8E%E6%8C%91%E6%88%98"><span class="nav-number">3.</span> <span class="nav-text">阶段性总结：良好的开端，未来充满机遇与挑战</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">shizhe_yuan</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">10</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">shizhe_yuan</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
 </body>
 </html>
